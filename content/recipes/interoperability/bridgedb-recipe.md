@@ -428,7 +428,7 @@ You can find ready-made methods to map using R and Python for the given use case
 
 ---
 ```{bibliography} bridgedb/BridgeDb.bib
-
+  :filter: docname in docnames
 ```
 
 ___
