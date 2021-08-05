@@ -14,13 +14,13 @@
 ## Main Objectives
 
 
-Learn how to register a dataset on WikiData with the appropriate citation.
+Learn how to register a dataset on Wikidata with the appropriate citation.
 
 ___
 
 
 ## Requirements
-To register datasets to WikiData requires a WikiData account.
+To register datasets to Wikidata requires a Wikidata account.
 
 ---
 
