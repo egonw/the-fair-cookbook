@@ -11,9 +11,6 @@
 :recipe_name: How to Register a Dataset with WikiData
 ```` 
 
-"UCnn.x Registering a dataset in Wikidata."
-
-
 ## Main Objectives
 
 
@@ -23,12 +20,6 @@ ___
 
 
 ## Requirements
-
-To run the below scripts, you need a Groovy installation. The Groovy script use version X.X of the Chemistry Development Kit (add the link here) (see also doi:10.1186/s13321-017-0220-4). (Add link here) This library and its use in Groovy is further explained in the book Groovy Cheminformatics with the Chemistry Development Kit. (add the link here)
-
-Click here for more detailed use instructions and where to find the tools:
-https://github.com/FAIRplus/fairplus-sdf(add the link here)
-
 To register datasets to WikiData requires a WikiData account.
 
 ---
