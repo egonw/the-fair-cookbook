@@ -1,4 +1,4 @@
-# WikiData Access
+# Wikidata Access
  ````{panels_fairplus}
 :identifier_text: FCB053 
 :identifier_link: 'https://w3id.org/faircookbook/FCB053'
@@ -26,7 +26,7 @@ The primary purpose of this recipe is:
 ## Main Content
 
 ### Creating an account
-The first step to gaining access to WikiData is to register an account at (https://www.wikidata.org/wiki/Wikidata:Main_Page)
+The first step to gaining access to Wikidata is to register an account at (https://www.Wikidata.org/wiki/Wikidata:Main_Page)
 
 
 ### Initial Restrictions
@@ -34,7 +34,7 @@ After creating an account, large-scale edits are restricted until an account has
 
 ## Conclusion
 In this recipe, we have gone over:
-1) How to create a WikiData account
+1) How to create a Wikidata account
 2) Restrictions of editing
 
 
