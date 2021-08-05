@@ -9,7 +9,6 @@
 :has_executable_code: nope
 :recipe_name: Gaining  
 ```` 
-" How to access metadata in Wikidata with RDF and SPARQL."
 ## Main Objectives
 
 
