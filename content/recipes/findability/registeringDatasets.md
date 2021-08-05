@@ -8,7 +8,7 @@
 :reading_time_minutes: 15
 :intended_audience: bioinformatician, data_scientist, data_engineer
 :has_executable_code: nope
-:recipe_name: How to Register a Dataset with WikiData
+:recipe_name: How to Register a Dataset with Wikidata
 ```` 
 
 ## Main Objectives
@@ -43,7 +43,7 @@ Dataset details can be transformed into a Quickstatement using https://scholia.t
 
 ### Adding 
 
-With the Quickstatement of the dataset, the dataset can be added to WikiData using https://quickstatements.toolforge.org/. This step requires a WikiData account. 
+With the Quickstatement of the dataset, the dataset can be added to Wikidata using https://quickstatements.toolforge.org/. This step requires a Wikidata account. 
 
 
 ## Authors
