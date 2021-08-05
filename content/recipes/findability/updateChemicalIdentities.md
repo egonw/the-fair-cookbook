@@ -16,7 +16,7 @@
 The primary purpose of this recipe is:
 
 > Determine chemical identifiers, given a compound
-> Updating chemical compounds in WikiData
+> Updating chemical compounds in Wikidata
 
 
 ## 1 Requirements
@@ -43,10 +43,10 @@ groovy -identifier <Identifier> -identifierType <IdentifierType>
 This script is available from the chemistry development kit/
 
 
-### 2.2 Updating WikiData
-With the available identifiers of a compound the compound can be updated within WikiData using any of the following:
+### 2.2 Updating Wikidata
+With the available identifiers of a compound the compound can be updated within Wikidata using any of the following:
 
-- Direct edits to the compound page from the compound's WikiData page using the 'edit' functionality 
+- Direct edits to the compound page from the compound's Wikidata page using the 'edit' functionality 
 - Quick statements at https://quickstatements.toolforge.org/
 
 
@@ -54,7 +54,7 @@ With the available identifiers of a compound the compound can be updated within 
 ## Conclusion
 This recipe discussed several aspects of updating chemical compounds
 - How to retrieve chemical identifiers given an original identifier
-- How to update chemical identification properties in WikiData 
+- How to update chemical identification properties in Wikidata 
 
 
 ## Authors
