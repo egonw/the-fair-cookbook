@@ -3,6 +3,8 @@
 
 
  ````{panels_fairplus}
+:identifier_text: findingCompounds.html
+:identifier_link: https://fairplus.github.io/the-fair-cookbook/content/recipes/findability/findingCompounds.html
 :difficulty_level: 2
 :recipe_type: hands_on
 :reading_time_minutes: 15
