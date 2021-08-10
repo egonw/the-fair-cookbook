@@ -3,8 +3,6 @@
 
 
  ````{panels_fairplus}
-:identifier_text: FCB053 
-:identifier_link: 'https://w3id.org/faircookbook/FCB053'
 :difficulty_level: 2
 :recipe_type: hands_on
 :reading_time_minutes: 15
@@ -32,6 +30,7 @@ To add other related chemical identifiers to each compound at least universal id
 * SMILES (FairSharing doi:[10.25504/fairsharing.qv4b3c](https://doi.org/10.25504/fairsharing.qv4b3c))
 * InChI (FairSharing doi:[10.25504/fairsharing.ddk9t9](https://doi.org/10.25504/fairsharing.ddk9t9))
 
+For a more detailed understanding of the chemical structures available refer to (FAIR Chemical Structures`fairchemicalstructures`)
 
 
 
@@ -66,15 +65,14 @@ Adding compounds to Wikidata is a multi-step procedure. This process begins with
 
 ## Authors
 
-
-| Name                                                                                                                                                                                                                                       | Orcid                                                                                                                        | Affiliation                           | Type                                                                              |                                                              Elixir Node                                                              | Credit Role
-|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|-----------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------:|:----------------:|
-| <div class="firstCol"><a target="_blank" href='https://github.com/'><img class='avatar-style' src='https://avatars.githubusercontent.com/no_github'></img><div class="d-block">Zachary Warnes</div></a>  </div>         | <a target="_blank" href='https://orcid.org/0000-0000-0000-0000'><i class='fab fa-orcid fa-2x text--orange'></i></a> | Maastricht University     | <i class="fas fa-graduation-cap fa-1x text--orange" alt="Academic"></i> | <img class='elixir-style' src='/the-fair-cookbook/_static/images/logo/Elixir/ELIXIR-UK.svg' ></img> | Writing – Review & Editing, Conceptualization
+````{authors_fairplus}
+Zachary: Writing - Conceptualization, Original Draft
+````
 
 ---
 
 ## License
 
-This page is released under the Creative Commons 4.0 BY license.
-
-<a href="https://creativecommons.org/licenses/by/4.0/"><img src="https://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png" height="20"/></a>
+````{license_fairplus}
+CC-BY-4.0
+````
