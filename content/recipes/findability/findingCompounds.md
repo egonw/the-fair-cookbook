@@ -61,8 +61,11 @@ Adding compounds to Wikidata is a multi-step procedure. This process begins with
 > * [Unique Keys](./.md)
 
 ---
+## References
 
-
+```{footbibliography}
+```
+---
 ## Authors
 
 ````{authors_fairplus}
@@ -70,6 +73,7 @@ Zachary: Writing - Conceptualization, Original Draft
 ````
 
 ---
+
 
 ## License
 
