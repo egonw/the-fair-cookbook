@@ -1,12 +1,10 @@
 # Update Chemical Identities
 
  ````{panels_fairplus}
-:identifier_text: FCB053 
-:identifier_link: 'https://w3id.org/faircookbook/FCB053'
 :difficulty_level: 2
 :recipe_type: hands_on
 :reading_time_minutes: 10
-:intended_audience: bioinformatician, data_scientist, data_engineer
+:intended_audience: bioinformatician, data_scientist, data_engineer, chemoinformatician
 :has_executable_code: yes
 :recipe_name: How to update chemical identities
 ```` 
@@ -15,24 +13,28 @@
 
 The primary purpose of this recipe is:
 
-> Determine chemical identifiers, given a compound
-> Updating chemical compounds in Wikidata
+* Determine chemical identifiers, given a compound.
+* Updating chemical compounds in Wikidata.
+* Create global unique identifiers for a chemical compound.
 
 
-## 1 Requirements
+## Requirements
 
 1) Bash Knowledge
 2) Groovy Knowledge
 3) WikiStatement Knowledge (Optional)
+4) General knowledge of SMILES and InChI
+   * SMILES (FairSharing doi:[10.25504/fairsharing.qv4b3c](https://doi.org/10.25504/fairsharing.qv4b3c))
+   * InChI (FairSharing doi:[10.25504/fairsharing.ddk9t9](https://doi.org/10.25504/fairsharing.ddk9t9))
 
 ---
 
 
-## 2 Main Content
+## Main Content
 
 
 
-### 2.1 Generating Compound Identifiers
+### Generating Compound Identifiers
 Updating chemical identifiers requires the existing knowledge of at least one chemical identifier. 
 
 From this identifier, other compound identifiers can be determined using the following script:
@@ -43,7 +45,7 @@ groovy -identifier <Identifier> -identifierType <IdentifierType>
 This script is available from the chemistry development kit/
 
 
-### 2.2 Updating Wikidata
+### Updating Wikidata
 With the available identifiers of a compound the compound can be updated within Wikidata using any of the following:
 
 - Direct edits to the compound page from the compound's Wikidata page using the 'edit' functionality 
@@ -58,16 +60,13 @@ This recipe discussed several aspects of updating chemical compounds
 
 
 ## Authors
+````{authors_fairplus}
+Zachary: Writing - Original Draft
+````
 
-
-| Name                                                                                                                                                                                                                                       | Orcid                                                                                                                        | Affiliation                           | Type                                                                              |                                                              Elixir Node                                                              | Credit Role
-|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|-----------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------:|:----------------:|
-| <div class="firstCol"><a target="_blank" href='https://github.com/'><img class='avatar-style' src='https://avatars.githubusercontent.com/no_github'></img><div class="d-block">Zachary Warnes</div></a>  </div>         | <a target="_blank" href='https://orcid.org/0000-0000-0000-0000'><i class='fab fa-orcid fa-2x text--orange'></i></a> | Maastricht University     | <i class="fas fa-graduation-cap fa-1x text--orange" alt="Academic"></i> | <img class='elixir-style' src='/the-fair-cookbook/_static/images/logo/Elixir/ELIXIR-UK.svg' ></img> | Writing – Review & Editing, Conceptualization
-
----
 
 ## License
 
-This page is released under the Creative Commons 4.0 BY license.
-
-<a href="https://creativecommons.org/licenses/by/4.0/"><img src="https://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png" height="20"/></a>
+````{license_fairplus}
+CC-BY-4.0
+````
