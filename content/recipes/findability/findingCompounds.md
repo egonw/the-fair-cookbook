@@ -30,9 +30,7 @@ To add other related chemical identifiers to each compound at least universal id
 * SMILES (FairSharing doi:[10.25504/fairsharing.qv4b3c](https://doi.org/10.25504/fairsharing.qv4b3c))
 * InChI (FairSharing doi:[10.25504/fairsharing.ddk9t9](https://doi.org/10.25504/fairsharing.ddk9t9))
 
-For a more detailed understanding of the chemical structures available refer to (FAIR Chemical Structures`fairchemicalstructures`)
-
-
+For a more detailed understanding of the chemical structures available refer to (FAIR Chemical Structures {footcite}`fairchemicalstructures`)
 
 ## Requirements:
 * Public license knowledge
