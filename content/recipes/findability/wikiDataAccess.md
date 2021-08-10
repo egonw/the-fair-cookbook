@@ -1,5 +1,7 @@
 # Wikidata Access
  ````{panels_fairplus}
+:identifier_text: wikiDataAccess.html
+:identifier_link: https://fairplus.github.io/the-fair-cookbook/content/recipes/findability/wikiDataAccess.html
 :difficulty_level: 2
 :recipe_type: hands_on
 :reading_time_minutes: 15
