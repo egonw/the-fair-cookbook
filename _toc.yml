@@ -108,6 +108,8 @@
             title: File format validation, FASTQ example #FCB030
           - file: content/recipes/interoperability/ETL-tools
             title: Extraction, transformation, and loading process #FCB031
+          - file: content/recipes/interoperability/registering-swisslipids-identifiers
+            title: Registering SwissLipids identifiers in Wikidata #FCxxxx
 
     - file: content/recipes/reusability
       title: Reusability
