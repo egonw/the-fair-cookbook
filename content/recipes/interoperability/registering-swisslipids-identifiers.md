@@ -159,6 +159,7 @@ are not yet in Wikidata. This is the topic of a future recipe.
 
 ````{authors_fairplus}
 Egon: Writing - Original Draft
+Philippe: Review & Editing
 ````
 
 
