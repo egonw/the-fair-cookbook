@@ -13,15 +13,16 @@
 
 ## Main Objectives
 
-The objective of this recipe is to describe how external identifiers can be added to Wikidata in an automated.
+The objective of this recipe is to describe how [Wikidata](https://www.wikidata.org) can be augmented by adding `external identifiers`, that is identifiers minted by other authorities for an entity described in Wikidata,  in an automated way. This is to make the content more findable and more interoperable.
 
 ___
 
 
 ## Requirements
 
-To record identifiers of some resource to make the content more findable and more interoperable, first a [Wikidata](https://www.wikidata.org/) property
-needs to be requested. That process is described [here](https://www.wikidata.org/wiki/Wikidata:Property_proposal).
+- Familiarity with the process of requesting a new property from [Wikidata](https://www.wikidata.org/).
+That process is described [here](https://www.wikidata.org/wiki/Wikidata:Property_proposal).
+- In order to record identifiers of some resource, first a  property needs to be requested.
 
 ---
 
@@ -33,29 +34,38 @@ metadata. For example, for chemical databases, you can share your chemical compo
 in your own database. That allows other databases, like Wikidata, to link to your database. First, that makes your data more findable,
 but it also makes your data easier to integrate and therefore more interoperable.
 
-This recipe follows this idea and starts with a CCZero-licensed mapping file, linking InChIKeys and database identifiers.
-Recipe *InChI and SMILES identifiers for chemical structures* ([fcb:FCB007](https://w3id.org/faircookbook/FCB007)) explains how InChIKeys
+This recipe follows this idea and starts with a mapping file that links InChIKeys and database identifiers and which is shared under a [CC0 license](https://creativecommons.org/share-your-work/public-domain/cc0/).
+The FAIR cookbook Recipe *[InChI and SMILES identifiers for chemical structures (fcb:FCB007)](https://w3id.org/faircookbook/FCB007)*  explains how InChIKeys
 can be generated for chemical compounds in your database.
 
-As an example, this recipe demonstrates the approach of listing [SwissLipid](http://www.swisslipids.org/#/) {footcite}`Aimo2015SwissLipids`
-identifiers in Wikidata, developed at the 2021 BioHackathon Europe. Earlier, a [Swiss Lipid property for Wikidata](https://www.wikidata.org/wiki/Wikidata:Property_proposal/SwissLipids_identifier)
+To illustrate our point, this recipe demonstrates the approach of listing [SwissLipid](http://www.swisslipids.org/#/) {footcite}`Aimo2015SwissLipids`
+identifiers in Wikidata, developed at the 2021 BioHackathon Europe.
+The work relied on the fact that a [`Swiss Lipids property` for Wikidata](https://www.wikidata.org/wiki/Wikidata:Property_proposal/SwissLipids_identifier)
 was already proposed, later approved, and created in Wikidata [just before the 2020 BioHackathon Europe](https://www.wikidata.org/w/index.php?title=Property:P8691&oldid=1287579005).
+
+```{warning}
 An existing Wikidata property is a requirement to adding the external identifiers.
+```
+
+```
 
 The recipe uses [Bacting](https://github.com/egonw/bacting) {footcite}`Willighagen2021` which can be used in Groovy and Python. We
-will use the first here. The starting point is mappings (tuples) that link the SwissLipid identifiers to InChIKeys. The latter
+will use the first here.
+
+The starting point is mappings (tuples) that link the `SwissLipids` identifiers to `InChIKeys`.
+The latter
 is used to find the matching Wikidata items.
 
 ### Step 1: getting the data
 
-The data is CC-BY but it was agreed that adding the SwissLipid identifiers to Wikidata (CCZero) is okay.
+While the SwissLipids data is available under [CC-BY license](https://creativecommons.org/licenses/by/4.0/), it was agreed that adding the SwissLipids identifiers to Wikidata resource, the data of which is available under [CC0 license](https://creativecommons.org/publicdomain/zero/1.0/) is legitimate.
 
 * Download `lipids.tsv` from the [Downloads](https://www.swisslipids.org/#/downloads) page
 * Gunzip the file
 
 ### Step 2: extract Swiss Lipid ID <> InChIKey tuples
 
-For this step I use `csvtool` (`apt get install csvtool`):
+For this step, I use `csvtool` (`apt get install csvtool`):
 
 ```shell
 csvtool -t TAB col 1,11 swisslipids.tsv
@@ -84,7 +94,7 @@ the identifiers will be added to Wikidata. See the recept publication by Waagmee
 
 ### Step 4: creating QuickStatements
 
-Now we have the mappings and the data model in Wikidata, we can create QuickStatements to allow us to enter the
+Now we have the mappings and the data model in Wikidata, we can create [QuickStatements](https://www.wikidata.org/wiki/Help:QuickStatements) to allow us to enter the
 data into Wikidata. This is not the only approach, and the process can be further automated using "Wikidata bots".
 For this, see BioHackathon Europe [Project 32](https://github.com/elixir-europe/biohackathon-projects-2021/tree/main/projects/32):
 Connecting ELIXIR-related open data on Wikidata via [WikiProject ELIXIR](https://www.wikidata.org/wiki/Wikidata:WikiProject_Elixir).
@@ -132,9 +142,8 @@ The resulting mappings are being added via the [QuickStatements website](https:/
 
 ## Conclusion
 
-It will be clear Bacting can be replaced without too much effort by other tools making the same steps. What is the
-main conclusion is that we can indeed automate adding external identifiers routinely to Wikidata using InChIKey
-matching.
+The main conclusion is that it is possible to automate adding external / third party identifiers routinely to Wikidata using InChIKey matching.
+The tool `Bacting` used in the example can obviously be replaced without too much effort by any other tools performing the same steps.
 
 What this protocol does not do, however, is create Wikidata items for lipids in the SwissLipids database that
 are not yet in Wikidata. This is the topic of a future recipe.
