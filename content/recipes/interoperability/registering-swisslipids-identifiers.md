@@ -47,7 +47,7 @@ was already proposed, later approved, and created in Wikidata [just before the 2
 An existing Wikidata property is a requirement to adding the external identifiers.
 ```
 
-The recipe uses [Bacting](https://github.com/egonw/bacting) {footcite}`Willighagen2021` which can be used in Groovy and Python. We
+The recipe uses [Bacting](https://bio.tools/bacting) {footcite}`Willighagen2021` which can be used in Groovy and Python. We
 will use the first here.
 
 The starting point is mappings (tuples) that link the `SwissLipids` identifiers to `InChIKeys`.
