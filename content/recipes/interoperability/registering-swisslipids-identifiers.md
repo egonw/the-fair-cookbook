@@ -38,7 +38,7 @@ This recipe follows this idea and starts with a mapping file that links InChIKey
 The FAIR cookbook Recipe *[InChI and SMILES identifiers for chemical structures (fcb:FCB007)](https://w3id.org/faircookbook/FCB007)*  explains how InChIKeys
 can be generated for chemical compounds in your database.
 
-To illustrate our point, this recipe demonstrates the approach of listing [SwissLipid](http://www.swisslipids.org/#/) {footcite}`Aimo2015SwissLipids`
+To illustrate our point, this recipe demonstrates the approach of listing [SwissLipids](http://www.swisslipids.org/#/) {footcite}`Aimo2015SwissLipids`
 identifiers in Wikidata, developed at the 2021 BioHackathon Europe.
 The work relied on the fact that a [`Swiss Lipids property` for Wikidata](https://www.wikidata.org/wiki/Wikidata:Property_proposal/SwissLipids_identifier)
 was already proposed, later approved, and created in Wikidata [just before the 2020 BioHackathon Europe](https://www.wikidata.org/w/index.php?title=Property:P8691&oldid=1287579005).
@@ -149,6 +149,13 @@ The tool `Bacting` used in the example can obviously be replaced without too muc
 
 What this protocol does not do, however, is create Wikidata items for lipids in the SwissLipids database that
 are not yet in Wikidata. This is the topic of a future recipe.
+
+## Acknowledgments
+
+We think [SwissLipids](http://www.swisslipids.org/) for providing data to be added to Wikidata, the ELIXIR
+[Biohackathon Europe](https://biohackathon-europe.org/) where this works was done and this recipe started,
+[EpiLipidNet](https://www.epilipid.net/) for creating a lipid research network (COST Action CA19105), and
+[Jerven Bolleman](https://orcid.org/0000-0002-7449-1266) for making their SPARQL endpoint available.
 
 ## References
 
