@@ -84,10 +84,14 @@ $ wc -l swiss*tsv
    777957 swisslipids.tsv
 ```
 
-### Step 3: creating a ShEx model
+### Step 3: creating a ShEx model (recommended)
 
-Skipping this step for later this week, but here the task is to create a shape expression for Wikidata, to model how
-the identifiers will be added to Wikidata. See the recept publication by Waagmeester et al. about _A protocol for adding knowledge to Wikidata: aligning resources on human coronaviruses_
+Ideally, shape expressions for the model are defined. This can be done in [SHACL](https://www.w3.org/TR/shacl/)
+and with [ShEx](https://shex.io/). [Wikidata uses ShEx](https://www.wikidata.org/wiki/Wikidata:WikiProject_Schemas)
+to describe the schemas used in their database. The schema can be used to expresse the shape of an item with the
+new identifier, but also of the model of the reference describing where the validity of the addition of the
+external identifier.
+See the recept publication by Waagmeester et al. about _A protocol for adding knowledge to Wikidata: aligning resources on human coronaviruses_
 {footcite}`Waagmeester2021`.
 
 ### Step 4: creating QuickStatements
